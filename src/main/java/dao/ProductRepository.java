@@ -51,7 +51,7 @@ public class ProductRepository {
 		//ID로 상품 찾기
 		public Product getProductByID(String productId) {
 			// 원래 코드는 책 p.173 참고
-			return products.stream()
+			return products.stream() // 상품 3개 흘러갑니다
 					.filter((product) -> product.getProductId().equals(productId)) // 필요한 것 거르기. 내부적으로 products가 for문을 도는 것. 
 					.findFirst() // 걸러서 그 첫 번째 찾아서
 					.get();		 // 얻어.

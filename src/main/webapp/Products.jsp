@@ -6,7 +6,7 @@
 <%@ page import="dto.Product"%>
 <!-- session은 서버축에 저장 -->
 <!-- tomcat위에서 돌고 있는 서버를 의미 -->
-<!-- session만들어 놓으면 한번 가져온 데이터를 계속 재활용해서 사용함. 서버에 저장물을 저장한다. -->
+<!-- session만들어 놓으면 한번 가져온 데이터를 계속 재활용해서 사용함 -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -43,11 +43,10 @@ List<Product> products = repository.getAllproducts();
     	<h3><%= product.getName() %></h3>
     	<p><%= product.getDescription() %></p>
     	<p><%= product.getUnitPrice() %>원</p>
-    	<p><a class="btn btn-secondary" role="button" href="./product.jsp?Id=<%= product.getProductId() %>">
-    	상세정보 &raquo;
-    	</a>
-    	  </p>
-    
+    	<!-- 누르면 상품정보 페이지 -->
+    	<p><a class = "btn btn-secondary" role = "button" href="./Product.jsp?id=<%=product.getProductId()%>">
+    		상세 정보 &raquo;
+    	</a></p>
     	</div>
     	<%
     	}
