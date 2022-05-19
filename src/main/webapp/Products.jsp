@@ -6,7 +6,7 @@
 <%@ page import="dto.Product"%>
 <!-- session은 서버축에 저장 -->
 <!-- tomcat위에서 돌고 있는 서버를 의미 -->
-<!-- session만들어 놓으면 한번 가져온 데이터를 계속 재활용해서 사용함 -->
+<!-- session만들어 놓으면 한번 가져온 데이터를 계속 재활용해서 사용함. 서버에 저장물을 저장한다. -->
 <!DOCTYPE html>
 <html>
 <head>

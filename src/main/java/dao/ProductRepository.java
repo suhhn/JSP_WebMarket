@@ -21,18 +21,18 @@ public class ProductRepository {
 		phone.setCondition("New");	
 		
 	
-		Product notebook = new Product ("p234", "iphone 7s", 700000);
+		Product notebook = new Product ("p234", "Imac", 700000);
 		notebook.setDescription("4.7inchm523354");
-		notebook.setCategory("smart Phone");
+		notebook.setCategory("smart NoteBoook");
 		notebook.setManufacturer("Apple");	
 		notebook.setUnitsInStock(1000);	
 		notebook.setCondition("New");	
 			
 			
 	
-		Product tv = new Product ("p1234", "iphone 6s", 800000);
+		Product tv = new Product ("p1234", "AppleTV", 800000);
 		tv.setDescription("4.7inchm");
-		tv.setCategory("smart Phone");
+		tv.setCategory("smart TV");
 		tv.setManufacturer("Apple");	
 		tv.setUnitsInStock(1000);	
 	    tv.setCondition("New");	
