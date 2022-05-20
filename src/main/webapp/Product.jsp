@@ -35,7 +35,7 @@
               <p><%= product.getDescription() %></p>
               <!-- 나머지는 책에 있음 p.174 -->
               <p>
-                <a href="#" class="btn btn-info">상품 주문 &raquo;</a>
+                <a href="./addProduct.jsp" class="btn btn-info">상품 주문 &raquo;</a>
               <a href="./Products.jsp" class="btn btn-secondary">상품 목록 &raquo;</a> 
               </p>
           </div>

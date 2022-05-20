@@ -87,7 +87,7 @@ private static final long serialVersionUID = 5862180265148817434L;
 	}
 
 	public String getCondition() {
-		return condition;
+		return condition;	
 	}
 
 	public void setCondition(String condition) {
