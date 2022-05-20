@@ -25,6 +25,12 @@
       </div>
     </div>
     <%
+    out.println(session.getAttribute("food"));
+    
+    out.println(session.getAttribute("name"));
+    out.println(session.getAttribute("name"));
+  
+    
     ProductRepository repository = ProductRepository.getinstance();
     List<Product> products = repository.getAllproducts();   
     %>

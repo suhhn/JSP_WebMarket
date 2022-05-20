@@ -1,7 +1,10 @@
+<%@page import="java.util.ArrayList"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ page import="java.util.Date" %>
 <%@ page import="java.text.SimpleDateFormat" %>
+<%@ page import="java.util.List" %>
+<%@ page import="dto.Product" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -40,21 +43,31 @@
 	       <%= tagline %>
 	    </h3>
 	    <%
-	    response.setIntHeader("Refresh",5); // 1초에 한번 씩 새로고침.
+	    // 1초에 한번씩 새로고침
+	    response.setIntHeader("Refresh", 5); // 5초 마다 새로고침
+	    
 	    Date today = new Date();
 	    
 	    SimpleDateFormat format = new SimpleDateFormat("hh:mm:ss a");
 	    
 	    out.println("현재 접속 시간: " + format.format(today));
+	    
+	    session.setAttribute("name", "오수현"); // 세션 사용
+	    session.setAttribute("age", 23); // 2번째 인자가 object이므로 조상님에게 물려받은거 다 들어간다. = 모든 객체는 다 들어간다.
+	    
+	    List<String> foods = new ArrayList<>();
+	    foods.add("짜장면");
+	    foods.add("라면");
+	    foods.add("탕수육");
+	    
+	    session.setAttribute("food", foods);
+	    session.setMaxInactiveInterval(5); // 5초 후에 세션 날라가게 하기
+	    
 	    %>
 	  </div>
 	</div>
 	
 	<jsp:include page="footer.jsp" />
+	
 </body>
 </html>
- 
-
-
-
-
