@@ -43,6 +43,6 @@ public class TodoRepository{
 	                break;
 	            }
 	        }
-	        todos.remove(removeTodo);
+	        todos.remove(removeTodo);  // reference가 똑같아서 된 것.
 	    }
 }

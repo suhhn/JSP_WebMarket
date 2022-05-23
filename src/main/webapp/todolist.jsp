@@ -17,7 +17,7 @@
     <script>
       function setDone(id) {
     	  $.ajax({
-              url: "processToggle.jsp",
+              url: "toggleTodo.do",
               type: "post",
               data: { "id": id },
               success: function (data) {
@@ -30,7 +30,7 @@
     	  // post 방식으로 processAddTodo.jsp?task=어쩌구
           let task = $("#text").val();
     	  $.ajax({
-    		  url: "processAddTodo.jsp",
+    		  url: "addTodo.do",
     		  type: "post",
     		  data: { "task": task },
     		  success: function (data) {
@@ -40,7 +40,7 @@
       }
       function remove(id) {
     	  $.ajax({
-              url: "processRemoveTodo.jsp",
+              url: "removeTodo.do",
               type: "post",
               data: { "id": id },
               success: function (data) {
