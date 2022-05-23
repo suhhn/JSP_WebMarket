@@ -14,7 +14,7 @@ public class ProductRepository {
 	// 하나의 객체를 생성 후 인스턴스를 재사용하는 싱글턴 패턴    // instance는 제일 처음에 생성되는 애임 static은 컴퓨터 키자마자 생김.
 	private static ProductRepository instance = new ProductRepository();
 	
-	public static ProductRepository getinstance() { // 싱글턴으로 ㅁ나듬
+	public static ProductRepository getinstance() { // 싱글턴패톤
 		
 		return instance;
 	}
